@@ -10,8 +10,12 @@ dotenv.config();
 
 const app = express();
 connectDB();
+const corsOptions = {
+  origin:"https://expense-tracker-awv8.onrender.com",
+  credentials:true
+}
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const _dirname = path.resolve();

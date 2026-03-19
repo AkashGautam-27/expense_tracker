@@ -18,7 +18,7 @@ export default function Add({darkMode}) {
 
     const expenseData = { userId, date, category, amount, notes };
 
-    const res = await fetch("http://localhost:5000/api/expense/add", {
+    const res = await fetch("https://expense-tracker-awv8.onrender.com/api/expense/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(expenseData),

@@ -20,7 +20,7 @@ export default function View({ darkMode }) {
   useEffect(() => {
     const userId = localStorage.getItem("userId");
 
-    fetch(`http://localhost:5000/api/expense/view/${userId}`)
+    fetch(`https://expense-tracker-awv8.onrender.com/api/expense/view/${userId}`)
       .then(res => res.json())
       .then(data => setExpenses(data.expenses || []));
   }, []);
@@ -45,7 +45,7 @@ export default function View({ darkMode }) {
 
   const handleUpdate = async () => {
     const res = await fetch(
-      `http://localhost:5000/api/expense/update/${editItem._id}`,
+      `https://expense-tracker-awv8.onrender.com/api/expense/update/${editItem._id}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -72,7 +72,7 @@ export default function View({ darkMode }) {
 
   // ================= DELETE =================
   const handleDelete = async (id) => {
-    const res = await fetch(`http://localhost:5000/api/expense/delete/${id}`, {
+    const res = await fetch(`https://expense-tracker-awv8.onrender.com/api/expense/delete/${id}`, {
       method: "DELETE",
     });
 

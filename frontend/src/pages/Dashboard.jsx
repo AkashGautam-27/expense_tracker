@@ -17,7 +17,7 @@ export default function Dashboard({ darkMode }) {
 
   // ================= FETCH =================
   useEffect(() => {
-    fetch(`http://localhost:5000/api/expense/view/${userId}`)
+    fetch(`https://expense-tracker-awv8.onrender.com/api/expense/view/${userId}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
