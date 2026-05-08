@@ -139,11 +139,11 @@ npm run dev
 Add your project screenshots here.
 
 ```md
-<img src="/frontend/public/about/Overview.png" alt="Overview"/>
-<img src="/frontend/public/about/Add.png" alt="Overview"/>
-<img src="/frontend/public/about/Chart.png" alt="Overview"/>
-<img src="/frontend/public/about//Setting.png" alt="Overview"/>
-<img src="/frontend/public/about/View.png" alt="Overview"/>
+<img src="/frontend/public/about/Overview.png" alt="Overview" width="700"/>
+<img src="/frontend/public/about/Add.png" alt="Add"  width="700"/>
+<img src="/frontend/public/about/Chart.png" alt="chart"  width="700"/>
+<img src="/frontend/public/about//Setting.png" alt="setting"  width="700"/>
+<img src="/frontend/public/about/View.png" alt="new"  width="700"/>
 
 ```
 
